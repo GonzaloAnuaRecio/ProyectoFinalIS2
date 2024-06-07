@@ -1,0 +1,4 @@
+dominio.Event#getQuestions()Ljava/util/List;
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+toString java.lang.Object#toString()Ljava/lang/String;

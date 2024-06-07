@@ -1,0 +1,3 @@
+businessLogic.BLFacadeImplementation#getEventsMonth(Ljava/util/Date;)Ljava/util/List;
+==
+getEventsMonth dataAccess.DataAccessHibernateInterface#getEventsMonth(Ljava/util/Date;)Ljava/util/List;

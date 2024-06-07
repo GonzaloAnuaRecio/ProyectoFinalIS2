@@ -1,0 +1,9 @@
+modelo.bean.ConsultarApuesta#<init>()V
+java.util.ArrayList#<init>()V
+java.util.Date#<init>()V
+businessLogic.BLFacadeImplementation#instance-init#
+java.util.ArrayList#instance-init#
+dataAccess.DataAccessHibernate#<init>()V
+java.util.Date#instance-init#
+businessLogic.BLFacadeImplementation#<init>(LdataAccess/DataAccessHibernateInterface;)V
+dataAccess.DataAccessHibernate#instance-init#

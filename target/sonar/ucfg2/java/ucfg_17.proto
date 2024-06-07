@@ -1,0 +1,83 @@
+
+-dominio.Question#toString()Ljava/lang/String;d
+XC:/Users/ganua/git/ProyectoFinalIS2/BetsJSFHibernate/src/main/java/dominio/Question.java— —("1*­
+1
+˜	 ˜(s
+q
+
+˜	 ˜(
+%0java.lang.Integer"__id*D
+
+__unknown_file ((*&
+dominio.Question"
+questionNumbern
+l
+
+˜	 ˜(
+%1java.lang.String"__concat*'
+
+˜	 ˜(
+
+%0java.lang.Integer*
+
+˜ ˜(
+;l
+j
+
+˜ ˜($
+%2java.lang.String"__id*>
+
+__unknown_file ("* 
+dominio.Question"
+
+question€
+~
+
+˜	 ˜($
+%3java.lang.String"__concat*&
+
+˜	 ˜(
+
+%1java.lang.String*&
+
+˜ ˜($
+
+%2java.lang.Stringm
+k
+
+˜	 ˜((
+%4java.lang.String"__concat*&
+
+˜	 ˜($
+
+%3java.lang.String*
+
+˜% ˜((
+;«
+¨
+
+˜) ˜(C
+%5java.lang.String"-java.lang.Float#toString(F)Ljava/lang/String;*/
+
+__unknown_file ("
+java.lang.Float*"
+
+__unknown_file (
+""€
+~
+
+˜	 ˜(C
+%6java.lang.String"__concat*&
+
+˜	 ˜((
+
+%4java.lang.String*&
+
+˜) ˜(C
+
+%5java.lang.String"&
+
+˜ ˜(D
+
+%6java.lang.StringB
+dominio.QuestionH

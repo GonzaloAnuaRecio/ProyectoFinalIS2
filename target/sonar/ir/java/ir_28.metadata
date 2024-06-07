@@ -1,0 +1,6 @@
+modelo.bean.CrearApuesta#onEventSelect(Lorg/primefaces/event/SelectEvent;)V
+modelo.bean.CrearApuesta#extraerDB(Ldominio/Event;)Ldominio/Event;
+==
+getQuestions dominio.Event#getQuestions()Ljava/util/List;
+println java.io.PrintStream#println(Ljava/lang/String;)V
+getObject org.primefaces.event.SelectEvent#getObject()Ljava/lang/Object;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf17127574112340" configfile="/BetsJSFHibernate/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Consultar.xhtml" x="463" y="315" id="pf17127575113851" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf17127575113852" inlinks="pf17127575113853" path="/Consultar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="PaginaInicio.xhtml" x="564" y="108" id="pf17127575113854" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf17127575113853 pf17127575113855" inlinks="pf17127575113852 pf17127575113856 pf17127705794930" path="/PaginaInicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Crear.xhtml" x="720" y="324" id="pf17127575113857" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf17127575113856" inlinks="pf17127575113855" path="/Crear.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Login.xhtml" x="276" y="84" id="pf17127705794931" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf17127705794930" path="/Login.xhtml"/>
+  <links id="pf17127575113853" target="pf17127575113851" source="pf17127575113854" outcome="consultar"/>
+  <links id="pf17127575113852" target="pf17127575113854" source="pf17127575113851" outcome="volverConsultar"/>
+  <links id="pf17127575113856" target="pf17127575113854" source="pf17127575113857" outcome="volverCrear"/>
+  <links id="pf17127575113855" target="pf17127575113857" source="pf17127575113854" outcome="crear"/>
+  <links id="pf17127705794930" target="pf17127575113854" source="pf17127705794931" outcome="login"/>
+</pageflow:Pageflow>

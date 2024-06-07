@@ -1,0 +1,5 @@
+dominio.Event#DoesQuestionExists(Ljava/lang/String;)Z
+java.lang.String#compareTo(Ljava/lang/String;)I
+==
+getQuestion dominio.Question#getQuestion()Ljava/lang/String;
+getQuestions dominio.Event#getQuestions()Ljava/util/List;

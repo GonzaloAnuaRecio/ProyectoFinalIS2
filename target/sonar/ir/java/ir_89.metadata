@@ -1,0 +1,11 @@
+businessLogic.BLFacadeImplementation#createQuestion(Ldominio/Event;Ljava/lang/String;F)Ldominio/Question;
+exceptions.EventFinished#<init>(Ljava/lang/String;)V
+java.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;
+java.util.Date#<init>()V
+exceptions.EventFinished#instance-init#
+java.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+java.util.Date#instance-init#
+==
+getEventDate dominio.Event#getEventDate()Ljava/util/Date;
+compareTo java.util.Date#compareTo(Ljava/util/Date;)I
+createQuestion dataAccess.DataAccessHibernateInterface#createQuestion(Ldominio/Event;Ljava/lang/String;F)Ldominio/Question;

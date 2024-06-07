@@ -1,0 +1,39 @@
+
+*dominio.Event#toString()Ljava/lang/String;_
+UC:/Users/ganua/git/ProyectoFinalIS2/BetsJSFHibernate/src/main/java/dominio/Event.javaQ Q("1*ò
+1R	 R(k
+i
+R	 R(
+%0java.lang.Integer"__id*>
+
+__unknown_file ("* 
+dominio.Event"
+eventNumberh
+f
+R	 R(
+%1java.lang.String"__concat*%
+R	 R(
+
+%0java.lang.Integer*
+R R(
+;j
+h
+R R($
+%2java.lang.String"__id*>
+
+__unknown_file ("* 
+dominio.Event"
+descriptionz
+x
+R	 R($
+%3java.lang.String"__concat*$
+R	 R(
+
+%1java.lang.String*$
+R R($
+
+%2java.lang.String"$
+R R(%
+
+%3java.lang.StringB
+dominio.EventH

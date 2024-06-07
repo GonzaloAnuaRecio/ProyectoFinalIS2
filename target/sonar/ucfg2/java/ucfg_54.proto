@@ -1,0 +1,54 @@
+
+,dominio.Event#getQuestions()Ljava/util/List;_
+UC:/Users/ganua/git/ProyectoFinalIS2/BetsJSFHibernate/src/main/java/dominio/Event.java (#"1*É
+1 (Q
+O
+ (
+%0java.io.PrintStream"__id*"
+
+__unknown_file (
+""f
+d
+5 (>
+%1java.util.List"__id*<
+
+__unknown_file ( *
+dominio.Event"
+	questions”‘
+5 (I
+%2java.lang.String"-java.lang.Object#toString()Ljava/lang/String;*2
+
+__unknown_file (
+
+%1java.util.List2
+toString()
+
+ (I
+%3java.lang.String"__concat*+
+ (2
+Recuperando las preguntas: *$
+5 (I
+
+%2java.lang.String×Ô
+ (J
+
+%4void"0java.io.PrintStream#println(Ljava/lang/String;)V*7
+
+__unknown_file (
+
+%0java.io.PrintStream*4
+
+__unknown_file (
+
+%3java.lang.String2println(Ljava/lang/String;)f
+d
+	 (
+%5java.util.List"__id*<
+
+__unknown_file ( *
+dominio.Event"
+	questions""
+ (
+
+%5java.util.ListB
+dominio.EventH

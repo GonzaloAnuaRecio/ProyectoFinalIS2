@@ -1,0 +1,4 @@
+modelo.bean.CrearApuesta#onDateSelect(Lorg/primefaces/event/SelectEvent;)V
+==
+getEvents businessLogic.BLFacadeImplementation#getEvents(Ljava/util/Date;)Ljava/util/List;
+setEventosSeleccionados modelo.bean.CrearApuesta#setEventosSeleccionados(Ljava/util/List;)V

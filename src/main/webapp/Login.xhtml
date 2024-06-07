@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<h3>¡Bienvenido!</h3>
+	</h:head>
+	
+	<h:body>
+		<h:form id="miForm">
+		
+			<tr>
+				<td>
+					<p>Nombre: </p>
+				</td>
+				<td>
+					<h:inputText id="nombre" value="#{login.nombre}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Contraseña: </p>
+				</td>
+				<td>
+					<h:inputSecret id="contrasena" value="#{login.contrasena}"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h:commandButton value="Login" action="#{login.hacerLogin}"/>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<h:commandButton value="Registrarse" action="#{login.Registrarse}"/>
+				</td>
+			</tr>		
+		</h:form>
+	</h:body>
+</f:view>	
+</html>

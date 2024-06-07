@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+	<managed-bean>
+		<managed-bean-name>crearApuesta</managed-bean-name>
+		<managed-bean-class>modelo.bean.CrearApuesta</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>consultarApuesta</managed-bean-name>
+		<managed-bean-class>modelo.bean.ConsultarApuesta</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>login</managed-bean-name>
+		<managed-bean-class>modelo.bean.Login</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>PaginaInicio.xhtml</display-name>
+		<from-view-id>/PaginaInicio.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>consultar</from-outcome>
+			<to-view-id>/Consultar.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Consultar.xhtml</display-name>
+		<from-view-id>/Consultar.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>volverConsultar</from-outcome>
+			<to-view-id>/PaginaInicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Crear.xhtml</display-name>
+		<from-view-id>/Crear.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>volverCrear</from-outcome>
+			<to-view-id>/PaginaInicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>PaginaInicio.xhtml</display-name>
+		<from-view-id>/PaginaInicio.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>crear</from-outcome>
+			<to-view-id>/Crear.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Login.xhtml</display-name>
+		<from-view-id>/Login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/PaginaInicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

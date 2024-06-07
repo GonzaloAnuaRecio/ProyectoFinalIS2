@@ -1,0 +1,7 @@
+modelo.bean.ConsultarApuesta#extraerDB(Ldominio/Event;)Ldominio/Event;
+==
+equals dominio.Event#equals(Ljava/lang/Object;)Z
+getEvents businessLogic.BLFacadeImplementation#getEvents(Ljava/util/Date;)Ljava/util/List;
+iterator java.util.List#iterator()Ljava/util/Iterator;
+hasNext java.util.Iterator#hasNext()Z
+next java.util.Iterator#next()Ljava/lang/Object;

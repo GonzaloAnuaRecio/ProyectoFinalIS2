@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<h3>Crear pregunta</h3>
+	</h:head>
+	
+	<h:body>
+		<h:form id="miForm">
+			
+			<!-- CALENDARIO -->
+			<p>Fecha:</p>
+			<p:calendar id="fecha" value="#{crearApuesta.fecha}" navigator="true" mode="popup">
+				<p:ajax event="dateSelect" listener="#{crearApuesta.onDateSelect}" update=":miForm:mensajes :miForm:tablaPF"></p:ajax>
+			</p:calendar>
+
+			<p>
+				<h:messages id="mensajes" style="color:blue"/>
+			</p>
+
+			<!-- TABLA DE PARTIDOS -->	
+				
+			<tr>
+				<td>
+					<h3>Lista partidos </h3>
+				</td>
+				<td>	
+					<p:dataTable id="tablaPF" value="#{crearApuesta.eventosSeleccionados}" var="item" selectionMode="single"
+					selection="#{crearApuesta.evento}" border="1" rowKey="#{item.eventNumber}">
+						<p:ajax event="rowSelect" listener="#{crearApuesta.onEventSelect}" update=":miForm:tablaPF2"></p:ajax>
+						<f:facet name="header">Eventos:</f:facet>
+						<p:column headerText="NumeroEvento">#{item.eventNumber}</p:column>
+						<p:column headerText="Evento">#{item.description}</p:column>
+					</p:dataTable>
+				</td>
+			</tr>
+			
+			<!-- TABLA DE PREGUNTAS -->
+			
+			<tr>
+				<td>
+					<h3>Lista de Preguntas</h3>
+				</td>
+				<td>
+					<p:dataTable id="tablaPF2" value="#{crearApuesta.listaPreguntas}" var="item" selectionMode="single"
+					selection="#{crearApuesta.question}" border="1" rowKey="#{item.questionNumber}">
+						<f:facet name="header">Preguntas:</f:facet>
+						<p:column headerText="NumeroPregunta">#{item.questionNumber}</p:column>
+						<p:column headerText="Pregunta">#{item.question}</p:column>
+						<p:column headerText="Apuesta Minima">#{item.betMinimum}</p:column>
+					</p:dataTable>
+				</td>
+			</tr>
+			
+			<!-- SECCION DE CREACION DE PREGUNTAS -->
+			
+			<p>Pregunta:
+				<h:inputText id="question" value="#{crearApuesta.pregunta}"></h:inputText>
+			</p>
+			<p>Apuesta
+				<h:inputText id="ApuestaMin" value="#{crearApuesta.apuestaMinima}"></h:inputText>
+			</p>
+			<p>
+				<h:outputText id="feedback" value="#{crearApuesta.mensajeFeedback}" style="color:red" />
+			</p>
+			
+			
+			
+			<p>
+				<h:commandButton value="Crear Pregunta" action="#{crearApuesta.crearPregunta}" update=":miForm:tablaPF :miForm:tablaPF2"></h:commandButton>
+				
+				<!-- PIE DE PAGINA (VUELTA A INICIO)-->
+				
+				<h:commandButton value="Cerrar" action="volverCrear"></h:commandButton>
+			</p>
+		</h:form>
+	</h:body>
+</f:view>	
+</html>

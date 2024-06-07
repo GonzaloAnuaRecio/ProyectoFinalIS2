@@ -1,0 +1,7 @@
+organization=gonzaloanuarecio
+projectKey=gonzaloanuarecio_proyectois2
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.54910
+dashboardUrl=https://sonarcloud.io/dashboard?id=gonzaloanuarecio_proyectois2
+ceTaskId=AY_s5Wis3EHcjfKA4QTz
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY_s5Wis3EHcjfKA4QTz
